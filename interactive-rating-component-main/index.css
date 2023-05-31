@@ -32,7 +32,7 @@ p {
 
 .main-container,
 .thank-you {
-  background-color: hsl(213, 19%, 18%);
+  background-image: linear-gradient(to bottom, #242834, #181e29);
   padding: 1.5rem;
   border-radius: 0.625rem;
   max-width: 400px;
