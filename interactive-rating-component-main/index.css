@@ -34,7 +34,7 @@ p {
 .thank-you {
   background-image: linear-gradient(to bottom, #242834, #181e29);
   padding: 1.5rem;
-  border-radius: 0.625rem;
+  border-radius: 1.5rem;
   max-width: 400px;
 }
 
