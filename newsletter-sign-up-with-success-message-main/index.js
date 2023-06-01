@@ -6,12 +6,14 @@ const submitButton = document.getElementById("submit");
 const dismiss = document.getElementById("dismiss");
 const email = document.getElementById("email");
 const invalid = document.getElementById("invalid");
+const span = document.querySelector(".span-email");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (ValidateEmail(email)) {
     mainContainer.classList.add("hide");
     thanksContainer.classList.remove("hide");
+    span.innerText = email.value;
   }
 });
 
