@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -19,10 +18,6 @@ ul {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
-/* ul img {
-  margin-bottom: 1rem;
-} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -116,7 +111,8 @@ form label {
   margin-left: 1rem;
   color: hsl(240deg 3% 39%);
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  /* margin-bottom: 0.5rem; */
 }
 
 form input {
@@ -150,10 +146,6 @@ form input {
   box-shadow: #ff5379 0px 5px 15px;
 }
 
-/* .thank-you {
-  max-width: 400px;
-} */
-
 .attribution {
   font-size: 14px;
   text-align: center;
@@ -166,6 +158,13 @@ form input {
 
 .hide {
   display: none;
+}
+
+#invalid {
+  font-size: 0.7rem;
+  color: #f48f89;
+  visibility: hidden;
+  margin-left: 14.5rem;
 }
 
 @media (max-width: 768px) {
