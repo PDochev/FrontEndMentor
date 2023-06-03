@@ -10,7 +10,17 @@ li {
   list-style-type: none;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
+  padding-bottom: 0.5rem;
   color: hsl(234, 29%, 20%);
+}
+
+li img {
+  margin-right: 0.5rem;
+}
+
+li:not(img) {
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -99,6 +109,7 @@ p {
 }
 
 .image-div img {
+  padding-top: 1.5rem;
   width: 100%;
 }
 
