@@ -6,6 +6,7 @@ const submitButton = document.getElementById("submit");
 const dismiss = document.getElementById("dismiss");
 const email = document.getElementById("email");
 const invalid = document.getElementById("invalid");
+const valid = document.getElementById("valid");
 const span = document.querySelector(".span-email");
 
 form.addEventListener("submit", (e) => {
@@ -22,12 +23,14 @@ dismiss.addEventListener("click", () => {
   thanksContainer.classList.add("hide");
   email.style = "";
   invalid.style.visibility = "hidden";
+  valid.style.visibility = "hidden";
 });
 
 function ValidateEmail(inputText) {
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (inputText.value.match(mailformat)) {
     // document.form.email.focus();
+
     return true;
   } else {
     // alert("You have entered an invalid email address!");
@@ -35,7 +38,6 @@ function ValidateEmail(inputText) {
     email.style.color = "#db9089";
     email.style.border = "1px solid #db9089";
     invalid.style.visibility = "visible";
-
     return false;
   }
 }

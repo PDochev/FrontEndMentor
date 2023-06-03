@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  background-color: hsl(360deg 0% 94%);
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+}
+
+.date-form {
+  display: flex;
+}
+
+.divider-hr hr {
+  display: flex;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start; */
+}
+
+.divider-hr button {
+  background-color: hsl(259deg 98% 65%);
+  /* margin-left: 36rem; */
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
