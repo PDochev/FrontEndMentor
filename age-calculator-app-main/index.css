@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
 
+/* ## Colors
+
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%) */
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +38,8 @@ body {
   width: 700px;
   flex-direction: column;
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 2rem 6rem 2rem 3rem;
+
   border-radius: 1.5rem 1.5rem 10rem 1.5rem;
 }
 
@@ -31,25 +47,89 @@ body {
   display: flex;
 }
 
-.divider-hr hr {
-  display: flex;
-  margin-right: 5rem;
-  margin-top: 2rem;
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start; */
+.divider-hr {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid hsl(0, 0%, 86%);
 }
 
 .divider-hr button {
-  background-color: hsl(259deg 98% 65%);
-  /* margin-left: 36rem; */
+  background-color: hsl(259, 100%, 65%);
+  position: relative;
+  width: 15%;
+  top: -2.5rem;
+  margin-left: 34rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.divider-hr button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.date-form label {
+  color: hsl(127deg 1% 44%);
+  font-weight: 700;
+  display: flex;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.date-form input {
+  display: flex;
+  margin-right: 1.5rem;
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0deg 0% 53%);
+  padding: 1rem;
+  width: 9rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 0.3rem;
+}
+
+.date-form input:hover {
+  cursor: pointer;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+.date-form input:focus {
+  cursor: pointer;
+  outline: 0.5px solid hsl(259, 100%, 65%);
+  color: black;
+}
+
+.age-results-div h1 {
+  font-size: 5rem;
+  font-family: inherit;
+  font-style: italic;
+  font-weight: 800;
+  margin-top: -2rem;
+}
+
+.age-results-div span {
+  color: hsl(259, 100%, 65%);
+  margin-right: 1rem;
+}
+
+small {
+  color: red;
+  font-size: 0.8rem;
+  font-family: inherit;
 }
 
 .attribution {
   font-size: 14px;
   text-align: center;
-  color: #fff;
+  color: black;
   margin-top: 2rem;
 }
 .attribution a {

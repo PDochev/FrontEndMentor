@@ -18,65 +18,67 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main>
-      <div class="container">
-      <div class="date-form">
-        <div class="date-div day-div">
-          <label for="day-input">Day</label>
-          <input
-            class="date-input"
-            id="day-input"
-            placeholder="DD"
-            maxlength="2"
-          />
+    <div class="container">
+      <form action="">
+        <div class="date-form">
+          <div class="date-div day-div">
+            <label for="day-input">Day</label>
+            <input
+              class="date-input"
+              id="day-input"
+              placeholder="DD"
+              maxlength="2"
+            />
+            <small></small>
+          </div>
+
+          <div class="date-div month-div">
+            <label for="month-input">Month</label>
+            <input
+              class="date-input"
+              id="month-input"
+              placeholder="MM"
+              maxlength="2"
+            />
+            <small></small>
+          </div>
+
+          <div class="date-div year-div">
+            <label for="year-input">Year</label>
+            <input
+              class="date-input"
+              id="year-input"
+              placeholder="YYYY"
+              maxlength="4"
+            />
+            <small></small>
+          </div>
         </div>
 
-        <div class="date-div month-div">
-          <label for="month-input">Month</label>
-          <input
-            class="date-input"
-            id="month-input"
-            placeholder="MM"
-            maxlength="2"
-          />
+        <div class="divider-hr">
+          <hr />
+          <button type="submit" class="btn-submit">
+            <img
+              class="btn-submit-icon"
+              src="assets/images/icon-arrow.svg"
+              alt=""
+            />
+          </button>
         </div>
-
-        <div class="date-div year-div">
-          <label for="year-input">Year</label>
-          <input
-            class="date-input"
-            id="year-input"
-            placeholder="YYYY"
-            maxlength="4"
-          />
-        </div>
-      </div>
-
-      <div class="divider-hr">
-        <hr />
-        <button class="btn-submit" onclick="">
-          <img
-            class="btn-submit-icon"
-            src="assets/images/icon-arrow.svg"
-            alt=""
-          />
-        </button>
-      </div>
+      </form>
 
       <div class="age-results-div">
         <h1><span id="age-years" class="header-span">- -</span>years</h1>
         <h1><span id="age-months" class="header-span">- -</span>months</h1>
         <h1><span id="age-days" class="header-span">- -</span>days</h1>
       </div>
-    </main>
-
-  </div>
+    </div>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Plamen Dochev</a>.
     </div>
 
     <script src="index.js"></script>
