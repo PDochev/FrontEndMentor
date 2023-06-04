@@ -23,8 +23,8 @@ body {
   display: flex;
   width: 800px;
   background-color: #fff;
-  /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */
-  box-shadow: 10px 10px 5px #eff3fe;
+
+  box-shadow: 10px 10px 20px #eff3fe;
   /* padding: 1.5rem; */
   border-radius: 1.5rem;
   height: 35rem;
@@ -79,7 +79,6 @@ body {
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
-  /* display: inline-block;  */
 }
 
 .summery {
@@ -87,6 +86,7 @@ body {
   flex-direction: column;
   width: 50%;
   height: 100%;
+  margin-left: 1rem;
 }
 
 .summery h2 {
@@ -216,4 +216,54 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    height: 100%;
+    padding: 0;
+  }
+
+  .result {
+    display: flex;
+    width: 100%;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    /* height: 100%; */
+  }
+
+  .summery {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .summery-flex {
+    margin-right: 1rem;
+  }
+
+  .summery-flex h3 {
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+  }
+
+  .submit {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+  }
 }
