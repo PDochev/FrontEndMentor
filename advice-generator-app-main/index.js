@@ -11,3 +11,7 @@ const submitButton = document.querySelector("button");
 submitButton.addEventListener("click", () => {
   dataFetch();
 });
+
+window.addEventListener("load", () => {
+  dataFetch();
+});
