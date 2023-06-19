@@ -32,11 +32,12 @@ footer {
   border-radius: 1.25rem;
   position: relative;
   max-width: 560px;
+  /* max-height: 400px; */
 }
 
 .container h1 {
   color: hsl(150, 100%, 66%);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
@@ -62,7 +63,7 @@ picture img {
 
 .container button {
   background-color: hsl(150, 100%, 66%);
-  padding: 1rem;
+  padding: 1.2rem;
   border: none;
   border-radius: 50%;
   position: absolute;
