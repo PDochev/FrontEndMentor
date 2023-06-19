@@ -79,6 +79,11 @@ button img {
   justify-content: center;
 }
 
+button img:hover {
+  transition: transform 250ms;
+  transform: rotate(135deg);
+}
+
 .container button:hover {
   background-color: hsl(150, 59%, 54%);
   box-shadow: hsl(150, 59%, 54%) 0px 10px 36px 0px,

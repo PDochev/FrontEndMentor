@@ -1,9 +1,15 @@
 const dataFetch = async () => {
-  const res = await fetch("https://api.adviceslip.com/advice");
-  const data = await res.json();
+  try {
+    const res = await fetch("https://api.adviceslip.com/advice");
+    const data = await res.json();
 
-  document.querySelector(".title").innerHTML = `Advice #${data.slip.id}`;
-  document.querySelector(".text").innerHTML = data.slip.advice;
+    document.querySelector(".title").textContent = `Advice #${data.slip.id}`;
+    document.querySelector(".text").innerHTML = `<q>${data.slip.advice}</q>`;
+  } catch (error) {
+    console.log("Something went wrong!", error);
+    document.querySelector(".title").textContent = `Something went wrong!`;
+    document.querySelector(".text").innerHTML = `${error.message}`;
+  }
 };
 
 const submitButton = document.querySelector("button");
