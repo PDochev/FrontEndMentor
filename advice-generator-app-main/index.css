@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 28px;
+  background-color: hsl(218, 23%, 16%);
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  padding: 1.25rem 1.25rem 3rem;
+  color: #ffffff;
+  border-radius: 1.25rem;
+  position: relative;
+  max-width: 560px;
+}
+
+.container h1 {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  letter-spacing: 0.4rem;
+}
+
+.container p {
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+picture img {
+  margin-bottom: 0.5rem;
+}
+
+.container button {
+  background-color: hsl(150, 100%, 66%);
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button img {
+  display: flex;
+  justify-content: center;
+}
+
+.container button:hover {
+  background-color: hsl(150, 59%, 54%);
+  box-shadow: hsl(150, 59%, 54%) 0px 10px 36px 0px,
+    hsl(150, 59%, 54%) 0px 0px 0px 1px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  margin-top: 5rem;
+}
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+
+@media (max-width: 768px) {
+  picture img {
+    content: url("./images/pattern-divider-mobile.svg");
+  }
+
+  .container {
+    max-width: 375px;
+  }
+}
