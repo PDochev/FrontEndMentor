@@ -18,6 +18,6 @@ submitButton.addEventListener("click", () => {
   dataFetch();
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   dataFetch();
 });

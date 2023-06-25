@@ -16,6 +16,7 @@ li {
 
 li img {
   margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 li:not(img) {

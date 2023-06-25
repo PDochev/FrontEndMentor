@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+body {
+  font-size: 28px;
+  background-color: hsl(185, 41%, 84%);
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem 1.25rem 1.5rem 2rem;
+
+  display: flex;
+  /* color: #ffffff; */
+  border-radius: 1.25rem;
+  box-shadow: 0 0 8px rgba(0 0 0 0.9);
+  /* position: relative; */
+  /* max-width: 560px; */
+  /* max-height: 400px; */
+}
+
+.left {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  width: 49%;
+  margin-right: -1rem;
+}
+
+.right {
+  background-color: hsl(183, 100%, 15%);
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  width: 51%;
+  border-radius: 13px;
+}
+
+small {
+  justify-content: flex-end;
+}
+
+label {
+  display: block;
+  color: hsl(186, 14%, 43%);
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+#bill {
+  background: url("images/icon-dollar.svg");
+  background-position: 13px 12px;
+  background-repeat: no-repeat;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 4px;
+  border: none;
+  padding: 3px 1rem;
+  text-align: right;
+  /* width: 13.8rem; */
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  height: 1.8rem;
+  /* padding-left: 11rem; */
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+#bill:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+#people {
+  background: url("images/icon-person.svg");
+  background-position: 13px 12px;
+  background-repeat: no-repeat;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 4px;
+  border: none;
+  padding: 3px 1rem;
+  text-align: right;
+
+  margin-top: 0.1rem;
+  margin-bottom: 1.5rem;
+  height: 1.8rem;
+
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.buttons-tip button {
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 6px;
+  border: none;
+  width: 4.5rem;
+  height: 1.8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 5px 0;
+  margin-bottom: 0.55rem;
+  cursor: pointer;
+}
+
+.buttons-tip button:focus {
+  background-color: hsl(172deg 67% 46%);
+  color: hsl(183, 100%, 15%);
+}
+
+.buttons-tip button:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(174deg 54% 74%);
+}
+
+#lab-tip {
+  margin-bottom: 0.5rem;
+}
+
+#lab-people {
+  margin-top: 0.8rem;
+}
+
+.custom {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 6px;
+  border: none;
+  width: 4.5rem;
+  height: 1.8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.custom:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
