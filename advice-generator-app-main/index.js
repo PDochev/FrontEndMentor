@@ -8,7 +8,7 @@ const dataFetch = async () => {
   } catch (error) {
     console.log("Something went wrong!", error);
     document.querySelector(".title").textContent = `Something went wrong!`;
-    document.querySelector(".text").innerHTML = `${error.message}`;
+    document.querySelector(".text").textContent = `${error.message}`;
   }
 };
 
